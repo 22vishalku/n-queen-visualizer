@@ -1,0 +1,98 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  background-color: #f0f8ff; /* Light blue */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  color: #333;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  font-size: 1em;
+  border: 2px solid #3498db; /* Blue */
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff; /* Dark blue */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Lighter blue */
+}
+
+#solutions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-height: calc(100vh - 300px); /* Adjust based on your layout */
+  overflow-y: auto;
+}
+
+.board {
+  display: grid;
+  gap: 2px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #3498db; /* Blue */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light grey */
+  border: 1px solid #3498db; /* Blue */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cell.queen {
+  color: #dc3545; /* Red */
+}
